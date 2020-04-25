@@ -1,10 +1,9 @@
 import {connect} from 'react-redux';
 import Home from '../components/home';
-import {} from '../modules/home';
+import item from '../modules/home';
 
 const mapStateToProps = state => {
-  {
-  }
+  return {};
 };
 
 const mapActionCreators = {};
