@@ -1,2 +1,4 @@
 /* eslint-disable no-undef */
-export default class ActionConstants {}
+export default {
+  SET_NAME: 'SET_NAME',
+};

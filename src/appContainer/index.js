@@ -4,7 +4,6 @@ import {Provider} from 'react-redux';
 import scenes from '../routes/scene';
 import PropTypes from 'prop-types';
 
-
 export default class AppContainer extends Component {
   static PropTypes = {
     store: PropTypes.object.isRequired,

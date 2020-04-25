@@ -1,12 +1,12 @@
 import {connect} from 'react-redux';
-import Home from '../components/home';
-import item from '../modules/home';
+import Home from '../components/homeComponent';
+import {setName} from '../modules/homeModule';
 
 const mapStateToProps = state => {
-  return {};
+  return {name: state.home.name};
 };
 
-const mapActionCreators = {};
+const mapActionCreators = {setName};
 export default connect(
   mapStateToProps,
   mapActionCreators,
