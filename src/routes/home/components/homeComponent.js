@@ -1,6 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {Component} from 'react';
-import {View, Text} from 'react-native';
+import MapContainer from './mapContainer/index';
+import {Container} from 'native-base';
 
 export default class Home extends React.Component {
   componentDidMount = () => {
@@ -8,10 +9,16 @@ export default class Home extends React.Component {
   };
 
   render() {
+    // const region = {
+    //   latitude: 3.146642,
+    //   longitude: 101.695845,
+    //   latitudeDelta: 0.0922,
+    //   longitudeDelta: 0.0421,
+    // };
     return (
-      <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-        <Text>Hello {this.props.name}</Text>
-      </View>
+      <Container>
+        <MapContainer />
+      </Container>
     );
   }
 }
